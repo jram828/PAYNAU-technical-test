@@ -3,55 +3,36 @@
 
 ## Front End instructions
 
-In order to run the basic front end application that was created for this project, first, you need to clone the project repository with the following link: 
- 
+In order to run the basic front end application that was created in React for this project, the procedure to follow is: 
+
+1. Clone the project repository in your local pc, with the following link: 
+
+https://github.com/jram828/PAYNAU-technical-test.git
+
+2. Open the repository in your preferred editor
+3. Open the "Front" folder in a new terminal
+4. Run the project with npm run dev
+5. Use VITE_BASE_URL=http://localhost:5001/person as environmental variable
+6. Open the project at http://localhost:5173 in your preferred browser
+   
+![image](https://github.com/user-attachments/assets/4ecc315c-5c93-4af6-bb89-80e834ceef04)
 
 
 ## Backend instructions
 
-For all charming widgets, please [Check it out 👉](https://next.ossinsight.io/widgets?utm_source=github&utm_medium=referral), here are some examples:
+The API for this test was developed using Node JS and Express. It was contenerized using docker.
 
-<h4 align="start">Installing docker image</h4>
-|Repository Activity Trends |
-| ----------- | ----------- |
-|<img src="https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=41986369&image_size=auto" />
+In order to run it locally, the steps to follow are:
 
-| Repository Performance Stats - Last 28 days | Active Contributors - Last 28 days |
-| ----------- | ----------- |
-|<img src="https://next.ossinsight.io/widgets/official/compose-last-28-days-stats/thumbnail.png?repo_id=41986369&image_size=auto" />|<img src="https://next.ossinsight.io/widgets/official/compose-recent-active-contributors/thumbnail.png?repo_id=41986369&limit=100&image_size=auto"/>|
+1. Open Docker Desktop
+2. Login to docker from your terminal (I use VS CODE), with docker login command.
+3. Pull docker image with: docker pull jram828/finalpaynau:v1
+4. From the terminal, verify that the image is stored locally
+5. Pull docker image for MySQL
+6. Run a container from the therminal using run -d -p mysql
+7. Run a container from the therminal using run -d -p jram828/finalpaynau 5001:3001
+8. In order to verify that the API is working, open http://localhost:5001/paynau-docs at your browser.
 
-| Star Geographic Distribution | Star History |
-| ----------- | ----------- |
-|<img src="https://next.ossinsight.io/widgets/official/analyze-repo-stars-map/thumbnail.png?activity=stars&repo_id=41986369&image_size=auto" />|<img src="https://next.ossinsight.io/widgets/official/analyze-repo-stars-history/thumbnail.png?repo_id=41986369&image_size=auto" />|
+   ![image](https://github.com/user-attachments/assets/ed2c0e52-0852-450a-8607-764ccc98da82)
 
-| Company Affiliation | Lines of Code Changes |
-| ----------- | ----------- |
-|<img src="https://next.ossinsight.io/widgets/official/analyze-repo-company/thumbnail.png?activity=stars&repo_id=41986369&image_size=auto" />|<img src="https://next.ossinsight.io/widgets/official/analyze-repo-loc-per-month/thumbnail.png?repo_id=41986369&image_size=auto" />|
 
-| Pull Request Size | Pull Request Lifecycle |
-| ----------- | ----------- |
-|<img src="https://next.ossinsight.io/widgets/official/analyze-repo-pull-requests-size-per-month/thumbnail.png?repo_id=41986369&image_size=auto" />|<img src="https://next.ossinsight.io/widgets/official/analyze-repo-pull-request-open-to-merged/thumbnail.png?repo_id=41986369&image_size=auto" />|
-
-| Currently Working On - Last 28 days | Top Active Contributors - Last 28 Days |
-| ----------- | ----------- |
-|<img src="https://next.ossinsight.io/widgets/official/compose-currently-working-on/thumbnail.png?activity_type=all&user_id=12960671&image_size=auto" />|<img src="https://next.ossinsight.io/widgets/official/compose-recent-top-contributors/thumbnail.png?repo_id=41986369&image_size=auto" />|
-
-| Repository Annual Ranking | Find More |
-| ----------- | ----------- |
-|<img src="https://next.ossinsight.io/widgets/official/collection-annually-ranking/thumbnail.png?activity=stars&collection_id=2&image_size=auto" />|<a href="https://next.ossinsight.io/widgets?utm_source=github&utm_medium=referral">Visit our website</a >|
-
-## Contact us
-
-<a href="https://twitter.com/OSSInsight" target="_blank">
-<img src=https://img.shields.io/badge/twitter-%2300acee.svg?color=1DA1F2&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
-
-<a href="https://github.com/pingcap/ossinsight/discussions" target="_blank">
-<img src=https://img.shields.io/badge/github-%2300acee.svg?color=181717&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-
-<a href="mailto:ossinsight@pingcap.com" target="_blank">
-<img src=https://img.shields.io/badge/gmail-%2300acee.svg?color=EA4335&style=for-the-badge&logo=gmail&logoColor=white alt=gmail style="margin-bottom: 5px;" />
-
-## Sponsors
-<a href="https://en.pingcap.com/tidb-cloud/?utm_source=ossinsight&utm_medium=referral">
-<img src="/web/static/img/tidb-cloud-logo-w.png" height=50 />
-</a>
