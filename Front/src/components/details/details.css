@@ -1,0 +1,98 @@
+.detail {
+  border-radius: 10px;
+  font-size: 100%;
+  background-color: lightgray;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(10px, auto);
+  margin: 5px;
+  justify-items: center;
+  height: fit-content;
+  padding: 10px;
+}
+
+.contenedordetail {
+  background-color: white;
+  opacity: 0.85;
+  border-radius: 10px;
+  padding: 10px;
+  height: 90vh;
+  width: 70vw;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.encabezado {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size:xx-large;
+  height: fit-content;
+}
+
+.info {
+  grid-column: 1;
+  grid-row: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.personal {
+  grid-column: 1;
+  grid-row: 1;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-left: 30px;
+}
+
+.nombredetail {
+  text-align: center;
+  font-size: larger;
+  grid-column: 1;
+  grid-row: 4;
+  height: fit-content;
+}
+.menu-detail {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.labeldetail {
+  font-size: medium;
+  font-weight: bold;
+  min-width: 200px;
+  margin: 5px;
+  align-content: center;
+  height: 30px;
+  text-align: left;
+}
+
+.cajadetail {
+  width: 250px;
+  border-radius: 5px;
+  border: 1px;
+}
+
+.infodetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+}

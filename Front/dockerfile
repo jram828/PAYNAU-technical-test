@@ -1,0 +1,28 @@
+# Utilizar la imagen oficial de Node.js como base
+FROM node:14
+
+# Establecer el directorio de trabajo
+WORKDIR /Front
+
+# Copiar el package.json y el package-lock.json
+COPY package*.json ./
+
+# Instalar las dependencias
+RUN npm install
+
+# Copiar el resto de la aplicación
+COPY . .
+
+ENV VITE_BASE_URL=http://paynau-backend:3001/person
+
+# Compilar la aplicación de React
+RUN npm run build
+
+# Instalar el servidor http para servir la aplicación
+RUN npm install -g serve
+
+# Exponer el puerto en el que correrá la aplicación
+EXPOSE 3000
+
+# Comando para ejecutar la aplicación
+CMD ["serve", "-s", "build", "-l", "3000"]

@@ -1,0 +1,14 @@
+services:
+  frontend:
+    build: .
+    environment:
+      VITE_BASE_URL: http://node-paynau:3001/person
+    ports:
+      - "6000:3000"
+    container_name: front-paynau
+
+
+
+  
+
+

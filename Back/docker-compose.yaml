@@ -1,0 +1,29 @@
+services:
+  mysql:
+    image: mysql:5.7 
+    environment:
+      MYSQL_ROOT_PASSWORD: Jram828
+      MYSQL_DATABASE: paynaudb
+    ports:  
+      - "3306:3306" 
+  nodejs:
+    build: .
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    environment:
+      DB_HOST: mysql-1
+      DB_USER: root
+      DB_NAME: paynaudb
+      DB_PASSWORD: Jram828
+      DB_PORT: 3306
+    ports:
+      - "5001:3001"
+    container_name: node-paynau
+
+
+
+  
+
+
